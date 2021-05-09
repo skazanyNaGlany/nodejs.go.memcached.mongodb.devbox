@@ -1,0 +1,29 @@
+FROM alpine:latest
+
+ADD www /var/www
+WORKDIR /var/www
+
+ENV LANG C.UTF-8
+ENV LC_ALL C.UTF-8
+ENV LC_CTYPE C.UTF-8
+
+RUN apk update
+
+RUN apk add vim
+RUN apk add curl
+RUN apk add screen
+RUN apk add bash
+RUN apk add wget
+RUN apk add git
+RUN apk add subversion
+RUN apk add htop
+RUN apk add gnupg
+RUN apk add procps
+RUN apk add sudo
+RUN apk add curl
+RUN apk add busybox-extras
+
+RUN apk add nodejs
+RUN apk add npm
+
+# your stuff here
