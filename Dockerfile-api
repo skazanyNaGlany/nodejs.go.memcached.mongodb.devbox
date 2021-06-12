@@ -29,4 +29,5 @@ RUN apt -y install dnsutils
 RUN apt -y install software-properties-common
 RUN apt -y install golang
 
+ENV GOPATH /root/go/
 
